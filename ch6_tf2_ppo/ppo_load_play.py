@@ -9,7 +9,7 @@ from ppo_learn import PPOagent
 
 def main():
 
-    env_name = 'Pendulum-v0'
+    env_name = 'Pendulum-v1'
     env = gym.make(env_name)
 
     agent = PPOagent(env) # PPO 에이전트 객체

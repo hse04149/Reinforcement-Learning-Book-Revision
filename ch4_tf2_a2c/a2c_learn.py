@@ -183,7 +183,7 @@ class A2Cagent(object):
             while not done:
 
                 # 학습 가시화
-                #self.env.render()
+                # self.env.render()
 
                 # 행동 샘플링
                 action = self.get_action(tf.convert_to_tensor([state], dtype=tf.float32))

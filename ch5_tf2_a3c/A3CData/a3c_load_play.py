@@ -9,7 +9,7 @@ from a3c_learn import A3Cagent
 
 def main():
 
-    env_name = 'Pendulum-v0'
+    env_name = 'Pendulum-v1'
     env = gym.make(env_name)
 
     agent = A3Cagent(env_name)  # A3C 에이전트 객체

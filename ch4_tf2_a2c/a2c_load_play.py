@@ -9,12 +9,13 @@ from a2c_learn import A2Cagent
 
 def main():
 
-    env_name = 'Pendulum-v0'
+    env_name = 'Pendulum-v1'
     env = gym.make(env_name)
 
     agent = A2Cagent(env)
 
-    agent.load_weights('./save_weights/')  # 신경망 파라미터를 가져옴
+    # agent.load_weights('./save_weights/')  # 신경망 파라미터를 가져옴
+    agent.load_weights('C:/Users/hse04/Reinforcement-Learning-Book-Revision/ch4_tf2_a2c/save_weights/')  # 신경망 파라미터를 가져옴
 
     time = 0
     state = env.reset() # 환경을 초기화하고 초기 상태 관측
